@@ -1,4 +1,4 @@
-void searchtheway(Graph &g,x,y,dist[],path[])
+void searchtheway(Graph &g,int x,int y,int dist[],int path[])
 {
 	int n = g.Max_vertexs;
 	int i,j,m;
@@ -42,5 +42,5 @@ void searchtheway(Graph &g,x,y,dist[],path[])
 		}
 		
 	}
-	//Êä³ö 
+	
 }
