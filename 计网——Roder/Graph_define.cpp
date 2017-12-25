@@ -7,7 +7,7 @@ int Graph::get_length(int a, int b){
 void Graph::add_Edges(){
 	int count1 = 0;
 	int count2 = 0;
-	fstream infile("Graph.txt", ios::in);
+	fstream infile("Graph_edges.txt", ios::in);
 	if (!infile){
 		cerr << "open error!" << endl;
 		exit(1);

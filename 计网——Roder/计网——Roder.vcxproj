@@ -10,6 +10,12 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graph_define.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{68F2317C-7D56-43F7-BC07-963D38D57A03}</ProjectGuid>
     <RootNamespace>计网——Roder</RootNamespace>
@@ -63,10 +69,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="标头.h" />
-    <ClInclude Include="标头1.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
