@@ -1,6 +1,6 @@
 
-#include " Graph.h" 
-void printpath(Graph &g, dist[], path[], int v)            //起始路由表序号，目的路由表序号
+#include "Graph.h" 
+void Graph::printpath(Graph &g, int dist[], int path[], int v)            //起始路由表序号，目的路由表序号
 {
 	
 	int i, j, k;
@@ -26,5 +26,4 @@ void printpath(Graph &g, dist[], path[], int v)            //起始路由表序�
 			}
 		}
 	}
-	cout<<"2333"<<endl;
 }
