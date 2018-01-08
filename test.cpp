@@ -26,7 +26,7 @@ int main(){
 			break;
 		case 3:cout << "请输入路由器序号。" << endl;
 			cin >> No;
-			a.inc_Edges(No);
+			a.inc_Edges(No-1);
 			cout << "删除成功" << endl;
 			break;
 		case 4:flag = 0; break;
