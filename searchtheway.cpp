@@ -2,46 +2,46 @@
 void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
 {
 	int n = g.Max_vertexs;
-	int i,j,m;
-	int k;
-	int min;
-	int *a = new int[n];
-	for(i = 0;i<n;i++)
+	bool *S = new bool[n];
+	int i, j, k;
+	E w, min;
+	for (i = 0; i<n; i++)
 	{
-		if(i != v)
+		dist[i] = g.get_length(v,i);
+		S[i] = false;
+		if (i != v && dist[i] <16)
+			path[i] = v;
+		else
 		{
-			dist[i] == g.get_length(v,i);
-			if(dist[i] < 16)
-			   path[i] = v;
-			else
-			   path[i] = -1;
+			path[i] = -1;
 		}
 	}
+	S[v] = true;
 	dist[v] = 0;
-	a[v] = 1;
-	for(j = 0;i<n-1;j++)
+	for (i = 0; i<n - 1; i++)
 	{
 		min = 16;
-	        m = v;
-		for(k = 0;k<n;k++)
+		int u = v;
+		for (j = 0; j<n; j++)
 		{
-			if(dist[k]<min && a[k] == 0)
+			if (S[j] == false && dist[j] < min)
 			{
-				min = dist[k];
-				m = k;
+				u = j;
+				min = dist[j];
 			}
 		}
-		a[k] = 1;
-		for(int l = 0;l<n;l++)
+		S[u] = true;
+		for (k = 0; k<n; k++)
 		{
-			int z = g.get_length(m,l);
-			if(a[l] == 0&&dist[l]>min+z)
+			w = g.get_length(u, k);
+			if (S[k] == false && w <16 && dist[u] + w<dist[k])
 			{
-				dist[l] = min + z;
-				path[l] = m;
+				dist[k] = dist[u] + w;
+				path[k] = u;
 			}
-			   
-		}		
+		}
 	}
-	printpath(g,dist,path,v);
+	printpath(g, v, dist, path);
+
+		
 }
