@@ -1,5 +1,5 @@
 #include"Graph.h"
-#include"printpath.h"
+#include"zxd.h"
 #include"searchtheway.h"
 int main(){
 	Graph a;

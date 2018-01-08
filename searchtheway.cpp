@@ -1,5 +1,5 @@
 ﻿#include"searchtheway.h"
-#include"printpath.h"
+#include"zxd.h"
 void searchtheway(Graph &g,int v,int dist[],int path[])
 {
 	int n = g.Max_vertexs;
