@@ -1,22 +1,30 @@
-void printpath(Graph &g, dist[], path[], int v)
+
+#include " Graph.h" 
+void printpath(Graph &g, dist[], path[], int v)            //èµ·å§‹è·¯ç”±è¡¨åºå·ï¼Œç›®çš„è·¯ç”±è¡¨åºå·
 {
-	cout << "´ÓÂ·ÓÉÆ÷" << g.getValue(v) << "µ½ÆäËû¸÷Â·ÓÉÆ÷µÄÂ·ÓÉ±íÎª£º";
+	
 	int i, j, k;
-	int n = g.NumberOfVertices;
+	int n = g.Max_vertexs;
 	int *d = new int[n];
-	for (i = 0; i<n; i++)
-		if (i = 0; i<n; i++)
-			if (i != v) {
-				j = i; k = 0;
-				while (j != v) {
-					d[k++] = j; j = path[j];
-				}
-				cout << g.getValue(i) << '\t' << "×î¶ÌÂ·ÓÉ³¤¶ÈÎª£º" << g.getValue(v);
-				while (k > 0)
+	for (i = 0; i < n-1; i++)
+	{
+		if(i != v)
+		{
+			k = i;
+			while (1)
+			{
+				j = path[k];
+				if (j != v)
 				{
-					cout << g.getValue(d[--k]) << "";
-					cout << "Â·ÓÉÂ·¾¶Îª£º" << dist[i] << endl;
+					k = j;
 				}
-				delete[]d;
+				if (j == v)
+				{
+					cout << "ä»è·¯ç”±å™¨" << v << "åˆ°" << i << "è·¯ç”±å™¨çš„ä¸‹ä¸€è·³ä¸ºï¼š" << k << " " << "è·¯ç”±è·ç¦»ä¸ºï¼š" << dist[i] << endl;
+					break;
+				}
 			}
+		}
+	}
+	cout<<"2333"<<endl;
 }
