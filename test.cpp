@@ -34,6 +34,8 @@ int main(){
 		case 4:cout << "请输入两个路由编号" << endl;
 			cin >> No >> No1;
 			a.del_list(No - 1, No1 - 1);
+			cout << "删除成功" << endl;
+			a.add_Edges();
 			break;
 		case 5:flag = 0; break;
 		default:cout << "error" << endl;
