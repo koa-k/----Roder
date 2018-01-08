@@ -5,7 +5,7 @@ void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
 	int i,j,m;
 	int k;
 	int min;
-	int a[n] = {0};
+	int *a = new int[n];
 	for(i = 0;i<n;i++)
 	{
 		if(i != v)
