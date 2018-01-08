@@ -1,5 +1,6 @@
-﻿#include"Graph.h"
-void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
+﻿#include"searchtheway.h"
+#include"printpath.h"
+void searchtheway(Graph &g,int v,int dist[],int path[])
 {
 	int n = g.Max_vertexs;
 	bool *S = new bool[n];
