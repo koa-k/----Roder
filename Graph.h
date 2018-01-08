@@ -13,6 +13,7 @@ public:
 	void inc_Edges(int x);
 	void searchtheway(Graph &g, int v, int dist[], int path[]);
 	void printpath(Graph &g,int dist[],int path[], int v);
+	void del_list(int a, int b);
 	Graph();
 	~Graph();
 
