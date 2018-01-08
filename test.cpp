@@ -6,8 +6,6 @@ int main(){
 	int No = 0;
 	int *dist = new int[a.Max_vertexs];
 	int *path = new int[a.Max_vertexs];
-	a.add_Edges();
-	a.inc_Edges(1);
 	while (flag){
 		cout << "******************************" << endl;
 		cout << "********ÇëÑ¡ÔñÄãµÄ²Ù×÷********" << endl;

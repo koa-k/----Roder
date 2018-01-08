@@ -5,7 +5,7 @@ void Graph::printpath(Graph &g, int dist[], int path[], int v)            //èµ·å
 	int i, j, k;
 	int n = g.Max_vertexs;
 	int *d = new int[n];
-	for (i = 0; i < n-1; i++)
+	for (i = 0; i < n; i++)
 	{
 		if(i != v)
 		{
