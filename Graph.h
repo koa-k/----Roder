@@ -5,11 +5,13 @@ using namespace std;
 class Graph
 {
 public:
-	int get_length(int a,int b);	//»ñµÃ½áµã¼äµÄ¾àÀë
-	void add_Edges();				//´ÓÎÄ¼ş¶ÁÈëÁÚ½Ó¾ØÕó
-	int Max_vertexs;				//´æ´¢µãµÄ×î´óÊıÄ¿
-	void get_Max_vertexs();			//»ñÈ¡µãµÄ×î´óÊıÄ¿
+	int get_length(int a,int b);	//è·å¾—ç»“ç‚¹é—´çš„è·ç¦»
+	void add_Edges();				//ä»æ–‡ä»¶è¯»å…¥é‚»æ¥çŸ©é˜µ
+	int Max_vertexs;				//å­˜å‚¨ç‚¹çš„æœ€å¤§æ•°ç›®
+	void get_Max_vertexs();			//è·å–ç‚¹çš„æœ€å¤§æ•°ç›®
 	void inc_Edges(int x);
+	void searchtheway(Graph &g, int v, int dist[], int path[]);
+	void printpath(Graph &g,int dist[],int path[], int v);
 	Graph();
 	~Graph();
 
