@@ -4,7 +4,7 @@ void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
 	int n = g.Max_vertexs;
 	bool *S = new bool[n];
 	int i, j, k;
-	E w, min;
+	int w, min;
 	for (i = 0; i<n; i++)
 	{
 		dist[i] = g.get_length(v, i);
