@@ -1,6 +1,6 @@
-#include"Graph.h"
+#include"wqy.h"
 #include"zxd.h"
-#include"searchtheway.h"
+#include"cfh.h"
 int main(){
 	Graph a;
 	int i = 0;
