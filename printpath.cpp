@@ -25,5 +25,4 @@ void Graph::printpath(Graph &g, int dist[], int path[], int v)            //起�
 			}
 		}
 	}
-	cout<<"测试编码"<<endl;
 }
