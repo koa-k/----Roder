@@ -29,8 +29,8 @@ void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
 				min = dist[k];
 				m = k;
 			}
+			a[k] = 1;
 		}
-		a[k] = 1;
 		for(int l = 0;l<n;l++)
 		{
 			int z = g.get_length(m,l);
