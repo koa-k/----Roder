@@ -16,13 +16,19 @@ int main(){
 		cout << "******************************" << endl;
 		cin >> i;
 		switch (i){
-		case 1:a.add_Edges(); break;
+		case 1:a.add_Edges(); 
+			cout << "加载成功。" << endl;
+			break;
 		case 2:cout << "请输入路由器序号。" << endl;
 			cin >> No;
-			a.searchtheway(a, No-1, dist, path); break;
+			a.add_Edges();
+			a.searchtheway(a, No-1, dist, path);
+			break;
 		case 3:cout << "请输入路由器序号。" << endl;
 			cin >> No;
 			a.inc_Edges(No);
+			cout << "删除成功" << endl;
+			break;
 		case 4:flag = 0; break;
 		default:cout << "error" << endl;
 		}
