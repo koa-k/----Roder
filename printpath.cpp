@@ -1,3 +1,4 @@
+
 #include " Graph.h" 
 void printpath(Graph &g, dist[], path[], int v)            //起始路由表序号，目的路由表序号
 {
@@ -25,4 +26,5 @@ void printpath(Graph &g, dist[], path[], int v)            //起始路由表序�
 			}
 		}
 	}
+	cout<<"2333"<<endl;
 }
