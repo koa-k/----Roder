@@ -22,7 +22,8 @@ int main(){
 		case 2:cout << "ÇëÊäÈëÂ·ÓÉÆ÷ÐòºÅ¡£" << endl;
 			cin >> No;
 			a.add_Edges();
-			a.searchtheway(a, No-1, dist, path); break;
+			a.searchtheway(a, No-1, dist, path);
+			break;
 		case 3:cout << "ÇëÊäÈëÂ·ÓÉÆ÷ÐòºÅ¡£" << endl;
 			cin >> No;
 			a.inc_Edges(No);
