@@ -13,14 +13,14 @@ void Graph::printpath(Graph &g, int dist[], int path[], int v)            //起�
 			while (1)
 			{
 				j = path[k];
-				if (j != v)
-				{
-					k = j;
-				}
 				if (j == v)
 				{
 					cout << "从路由器" << v+1 << "到" << i+1 << "路由器的下一跳为：" << k+1  << endl;
 					break;
+				}
+				if (j != v)
+				{
+					k = j;
 				}
 			}
 		}
