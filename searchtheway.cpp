@@ -1,5 +1,5 @@
 #include"Graph.h"
-void searchtheway(Graph &g,int v,int dist[],int path[])
+void Graph::searchtheway(Graph &g,int v,int dist[],int path[])
 {
 	int n = g.Max_vertexs;
 	int i,j,m;
