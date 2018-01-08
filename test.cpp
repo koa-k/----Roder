@@ -1,4 +1,6 @@
 #include"Graph.h"
+#include"zxd.h"
+#include"searchtheway.h"
 int main(){
 	Graph a;
 	int i = 0;
@@ -24,7 +26,7 @@ int main(){
 		case 2:cout << "ÇëÊäÈëÂ·ÓÉÆ÷ÐòºÅ¡£" << endl;
 			cin >> No;
 			a.add_Edges();
-			a.searchtheway(a, No-1, dist, path);
+			searchtheway(a, No-1, dist, path);
 			break;
 		case 3:cout << "ÇëÊäÈëÂ·ÓÉÆ÷ÐòºÅ¡£" << endl;
 			cin >> No;
